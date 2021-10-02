@@ -1,0 +1,80 @@
+body{
+	padding-top: 40px;
+	background-color: pink;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: blue;
+	overflow: hidden;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+}
+li a:hover:not(.active){
+	background-color: #111;
+}.active{
+	background-color: #4CAF50;
+}
+img{
+	width:800px;
+	height: 500px;
+	padding-top: 30px;
+}
+@media only screen and (max-width: 1000px){
+	body{
+		background-color: orange;
+	}
+}
+@media only screen and (max-width: 600px){
+	body{
+		background-color: yellow;
+	}
+}
+@media only screen and (max-width: 1000px){
+          ul{
+          	background-color: red;
+          }
+      }
+      @media only screen and (max-width: 600px){
+      	ul{
+      		background-color: green;
+      	}
+      }
+      @media only screen and (max-width: 1000px){
+      	img{
+      		width:500px;
+	        height: 400px;
+      	}
+      }
+       @media only screen and (max-width: 600px){
+
+      img{
+      		width:200px;
+	        height: 100px;
+	        float: right;
+      	}
+      }
+       @media only screen and (max-width: 600px){
+         li a{
+         	text-align: center;
+         	width: 300px;
+         	padding: 20px 26px;
+         	height: 5px;
+         	background-color: gray;
+         }
+         }
+         @media only screen and (max-width: 1000px){
+         	li{
+         		float: right;
+         	}
+         }
