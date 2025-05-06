@@ -1,0 +1,16 @@
+
+
+*) To remove jenkins by using commands
+========================================
+yum remove jenkins -y
+sudo rm -rf /var/lib/jenkins
+sudo rm -rf /var/log/jenkins
+sudo rm -rf /etc/jenkins
+sudo rm /etc/yum.repos.d/jenkins.repo
+systemctl status jenkins
+
+
+To install stress in vm
+================================
+sudo yum install stress -y
+sudo stress --cpu 8 --timeout 500
